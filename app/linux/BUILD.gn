@@ -11,7 +11,7 @@ if (should_generate_symbols) {
     # host_toolchain must be used for cross-compilation case.
     # See chrome/updater/mac:syms
     dump_syms =
-        "//third_party/breakpad:dump_syms($host_system_allocator_toolchain)"
+        "//third_party/breakpad:dump_syms($host_system_allocator_toolchain)"                             
     symbols_dir = "$brave_dist_dir/$brave_product_name.breakpad.syms"
     outputs = [ symbols_dir ]
 
